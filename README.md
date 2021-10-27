@@ -89,14 +89,15 @@ echo "/bin/ls" | ./hsh (Example 2).
 - It was created by Kenneth Lane 'Ken' Thompson.
 
 **Ken Thompson**
-Born in Feb 4th 1943.
-Is a computer scientist.
-He Holds a BS and MS in EE and CS from the UC Berkeley.
-He worked at Bell Labs, Google...
-He's known for Unix, B (pro lang), UTF-8, Go...
-He has multiple awards, such as Turing's, IEEE's, Japan prize...
-How does a shell work?
-an OS is made of many componenets, but its 2 main ones are the Kernel and the shell.
+- Born in Feb 4th 1943, he was a computer scientist.
+- He Holds a BS and MS in EE and CS from the UC Berkeley.
+- He worked at Bell Labs, Google...
+- He's known for Unix, B (programming language), UTF-8, Go...
+- He has multiple awards, such as Turing's, IEEE's, Japan prize...
+
+**How does a shell work?**
+
+An OS is made of many componenets, but its 2 main ones are the Kernel and the shell.
 The kernel is the nucleus of the OSs. It communicates between hardware and sofware.
 The end user write something on the terminal (input/output interface). The shell interpretes what's written to the kernel. The kernel gets the interpretations from the shell and does its job.
 
