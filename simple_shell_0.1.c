@@ -1,4 +1,4 @@
-#include "simple_shell.h"
+#include "header_file.h"
 char *name;
 /**
  * main - print prompt, handle EOF, read file_stream
