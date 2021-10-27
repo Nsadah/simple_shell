@@ -1,19 +1,19 @@
-Simple Shell Project
+> **Simple Shell Project**
 
-simple_shell
+**simple_shell**
 A simple Unix command interpreter.
 
-Project Description
+**Project Description**
 This project is a simpler version of the linux shell. It deals the essential parts that we've learned in C and Linux during the first Trimester with ALX. A user of this simple shell, can run different functionalities that the real shell does.
 
-Technologies and Concepts
+**Technologies and Concepts**
 C.
 Linux (Ubuntu 14.04 LTS).
 
-CREATION
+**CREATION**
 This simple shell was created an Ubuntu 14.04 LTS Operating system, using the C programming language.
 
-Compilation
+**Compilation**
 Go to the project's directory:
 cd simple_shell
 
