@@ -1,6 +1,7 @@
 > **Simple Shell Project**
 
 **simple_shell**
+
 A simple Unix command interpreter.
 
 **Project Description**
