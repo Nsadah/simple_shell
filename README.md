@@ -32,15 +32,16 @@ echo "/bin/ls" | ./hsh (Example 2).
 
 ### **The essential Simple Shell Functionalities:**
 
-Passing Betty (code style checker for holberton C coding standards) checks.
-Displaying a prompt and wait for user input.
-Handling errors.
-Handling commands.
-Handling commands with arguments.
-Handling EOF condition.
-Handling the PATH environment variable.
-Implementing the exit built-in, that exits the shell.
-Implementing the env built-in.
+- Passing Betty (code style checker for holberton C coding standards) checks.
+- Displaying a prompt and wait for user input.
+- Handling errors.
+- Handling commands.
+- Handling commands with arguments.
+- Handling EOF condition.
+- Handling the PATH environment variable.
+- Implementing the exit built-in, that exits the shell.
+- Implementing the env built-in.
+
 **The functions and system calls that we're allowed to use:**
 access (man 2 access)
 chdir (man 2 chdir)
