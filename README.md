@@ -24,10 +24,10 @@ gcc -Wall -Werror -Wextra -pedantic *.c -o hsh
 ### **Usage**
 
 You can use the shell in 2 different modes:
-using the shell in an interactive-way:
-./hsh you'll get a prompt, then you can start using the shell (Example 1).
 
-Using the shell in a non-interactive mode:
+- using the shell in an interactive-way:
+./hsh you'll get a prompt, then you can start using the shell (Example 1).
+- Using the shell in a non-interactive mode:
 echo "/bin/ls" | ./hsh (Example 2).
 
 ### **The essential Simple Shell Functionalities:**
@@ -77,16 +77,18 @@ echo "/bin/ls" | ./hsh (Example 2).
 
 ## **SHELL General Knowledge:**
 **Unix shell**
-It's a command line interpreter.
-It gets commands from a user through a terminal emulator.
-It comes between the OS Kernel and the user, offering the possibility for the user to access an OS's services.
-The shell wraps around delicate interiour of an OS, protecting it from an accidental damage.
-Thompson shell
-It's the first Unix shell, introduced in the 1st Unix version in 1971.
-It was written by Ken Thompson.
-It was a simple command interpreter.
-It was created by Kenneth Lane 'Ken' Thompson.
-Ken Thompson
+- It's a command line interpreter.
+- It gets commands from a user through a terminal emulator.
+- It comes between the OS Kernel and the user, offering the possibility for the user to access an OS's services.
+- The shell wraps around delicate interiour of an OS, protecting it from an accidental damage.
+
+**Thompson shell**
+- It's the first Unix shell, introduced in the 1st Unix version in 1971.
+- It was written by Ken Thompson.
+- It was a simple command interpreter.
+- It was created by Kenneth Lane 'Ken' Thompson.
+
+**Ken Thompson**
 Born in Feb 4th 1943.
 Is a computer scientist.
 He Holds a BS and MS in EE and CS from the UC Berkeley.
@@ -99,8 +101,6 @@ The kernel is the nucleus of the OSs. It communicates between hardware and sofwa
 The end user write something on the terminal (input/output interface). The shell interpretes what's written to the kernel. The kernel gets the interpretations from the shell and does its job.
 
 **TEAM**
-
 The team that contributed to this project was made up of two members, namely;
-
-Henschel Zulu
-Nsadah Micheal
+- Henschel Zulu
+- Nsadah Micheal
