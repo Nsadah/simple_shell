@@ -1,6 +1,6 @@
-> **Simple Shell Project**
+# **Simple Shell Project**
 
-**simple_shell**
+## **simple_shell**
 
 A simple Unix command interpreter.
 
@@ -92,3 +92,10 @@ How does a shell work?
 an OS is made of many componenets, but its 2 main ones are the Kernel and the shell.
 The kernel is the nucleus of the OSs. It communicates between hardware and sofware.
 The end user write something on the terminal (input/output interface). The shell interpretes what's written to the kernel. The kernel gets the interpretations from the shell and does its job.
+
+**TEAM**
+
+The team that contributed to this project was made up of two members, namely;
+
+Henschel Zulu
+Nsadah Micheal
