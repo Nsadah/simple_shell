@@ -102,6 +102,7 @@ The kernel is the nucleus of the OSs. It communicates between hardware and sofwa
 The end user write something on the terminal (input/output interface). The shell interpretes what's written to the kernel. The kernel gets the interpretations from the shell and does its job.
 
 **TEAM**
+
 The team that contributed to this project was made up of two members, namely;
 - Henschel Zulu
 - Nsadah Micheal
