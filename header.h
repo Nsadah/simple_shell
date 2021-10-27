@@ -7,6 +7,14 @@
 */
 
 int _isupper(int c);
+int _strlen(char *s);
+int _strcmp(const char *s1, const char *s2);
+char *_const_strconcat(const char *s1, const char *s2);
+char *_strconcat(char *s1, char *s2);
+char *_strdup(char *str);
+int _putchar(char c);
+
+
 
 
 #endif /* HEADER_H */
