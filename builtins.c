@@ -114,7 +114,7 @@ void new_setenv(vars_t *vars)
 
 /**
  * new_unsetenv - remove an environment variable
- * @vars: pointer to a struct of variables
+ * @vars: pointer to a struct of variables 
  *
  * Return: void
  */
