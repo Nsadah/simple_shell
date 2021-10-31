@@ -44,7 +44,6 @@ void start_shell(char *name)
 		buffer = NULL;
 	}
 }
-
 /**
  *hand status - handling exit status
  *@wstatus: pointer to the value to be printed in terminal as prompt
@@ -83,7 +82,7 @@ void hand_status(int *wstatus, char **argv, char *name, char *buffer, int wstatu
  *print_prompt- print the prompt in shell
  *@lenPrompt: len of prompt
  *Return: none
- */
+*/
 
 void print_prompt(int lenPrompt)
 {
@@ -107,8 +106,7 @@ void print_prompt(int lenPrompt)
  *check_interactive - checks if the shell is interactive or not
  *@lenPrompt: pointer to the value to be printed in terminal as prompt
  *Return: none
- */
-
+*/
 void check_interactive(int *lenPrompt)
 {
 	if (isatty(STDIN_FILENO) == 0)
