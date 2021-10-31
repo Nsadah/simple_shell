@@ -13,11 +13,11 @@
 #include <fcntl.h>
 
 /*Prototypes*/
-void start_shell(char *name)
-void hand_status(int *wstatus, char **argv, char *name, char *buffer, int wstatus_tmp)
-void print_prompt(int lenPrompt
-void check_interactive(int *lenPrompt)
-void check_exit(char **argv)
+void start_shell(char *name);
+void hand_status(int *wstatus, char **argv, char *name, char *buffer, int wstatus_tmp);
+void print_prompt(int lenPrompt;
+void check_interactive(int *lenPrompt);
+void check_exit(char **argv);
 #endif
 #ifndef BSIZE
 #define BSIZE 10000
