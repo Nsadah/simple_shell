@@ -16,11 +16,9 @@
 void init_shell()
 {
     clear();
-    printf("\n\n\n\n******************"
-        "************************");
+    printf("\n\n\n\n******************************************");
     printf("\n\n\n\t****WELCOME TO THIS SHELL****");
-    printf("\n\n\n\n*******************"
-        "***********************");
+    printf("\n\n\n\n******************************************");
     char* username = getenv("USER");
     printf("\n\n\nUSER is: @%s", username);
     printf("\n");
