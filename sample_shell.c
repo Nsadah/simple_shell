@@ -9,10 +9,10 @@
 #define MAXLETTERS 1000 // max number of letters to be supported
 #define MAXCOM 100 // max number of commands to be supported
   
-// Clearing the shell using escape sequences
+/* Clearing the shell using escape sequences */
 #define clear() printf("\033[H\033[J")
   
-// Greeting shell during startup
+/* Greeting shell during startup */
 void init_shell()
 {
     clear();
@@ -28,7 +28,7 @@ void init_shell()
     clear();
 }
 
-// Function to take input
+/* Function to take input */
 int takeInput(char* str)
 {
     char* buf;
@@ -44,7 +44,7 @@ int takeInput(char* str)
     }
 }
   
-// Function to print Current Directory.
+/* Function to print Current Directory.n*/
 void printDir()
 {
     char cwd[1024];
@@ -52,7 +52,7 @@ void printDir()
     printf("\nDir: %s", cwd);
 }
   
-// Function where the system command is executed
+/* Function where the system command is executed */
 void execArgs(char** parsed)
 {
 // Forking a child
@@ -73,7 +73,7 @@ void execArgs(char** parsed)
     }
 }
 
-// Function where the piped system commands is executed
+/* Function where the piped system commands is executed */
 void execArgsPiped(char** parsed, char** parsedpipe)
 {
     // 0 is read end, 1 is write end
@@ -129,7 +129,7 @@ void execArgsPiped(char** parsed, char** parsedpipe)
     }
 }
   
-// Help command builtin
+/* Help command builtin */
 void openHelp()
 {
     puts("\n***WELCOME TO MY SHELL HELP***"
@@ -146,7 +146,7 @@ void openHelp()
     return;
 }
 
-// Function to execute builtin commands
+/* Function to execute builtin commands */
 int ownCmdHandler(char** parsed)
 {
     int NoOfOwnCmds = 4, i, switchOwnArg = 0;
@@ -189,7 +189,7 @@ case 1:
     return 0;
 }
 
-// function for finding pipe
+/* function for finding pipe */
 int parsePipe(char* str, char** strpiped)
 {
     int i;
@@ -206,7 +206,7 @@ int parsePipe(char* str, char** strpiped)
     }
 }
   
-// function for parsing command words
+/* function for parsing command words */
 void parseSpace(char* str, char** parsed)
 {
     int i;
