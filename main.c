@@ -13,9 +13,35 @@ int main(int argc, char *argv[], char **env)
 	(void)argc;
 	signal(SIGINT, CTRLC);
 	create_env(env);
-	invoke_shell(argv[0]);
+	start_shell(argv[0]);
 	return (0);
 }
+
+/**
+ * get_oldpwd - return home
+ *
+ *Return: oldpwd
+ */
+char *get_oldpwd(void)
+{
+	int  a = 0, cont;
+	char *oldpwd;
+
+	while (_strncmp(environ[a], "OLDPWD", 6) != 0)
+		a++;
+	for (cont = 0; environ[a][cont] != '='; cont++)
+		;
+	oldpwd = environ[a] + cont + 1;
+	return (oldpwd);
+}
+
+/**
+ * init_file - initialize files log & hist
+ *
+ *@key_buff: pointer to buffer
+ *@leido: leido
+ *Return: No return
+ */
 void init_file(char *key_buff, int leido)
 {
 	int fd_log, fd_hist, escrito, historico;
@@ -37,4 +63,17 @@ void init_file(char *key_buff, int leido)
 		exit(-1);
 	close(fd_hist);
 	close(fd_log);
+}
+
+/**
+ *CTRLC - control c handler function
+ *@sign: int of sign
+ *Return: none
+ */
+
+void CTRLC(int sign)
+{
+	(void) sign;
+	write(STDOUT_FILENO, "\n", 1);
+	print_prompt(22);
 }
