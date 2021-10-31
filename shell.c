@@ -54,8 +54,7 @@ void start_shell(char *name)
  *@wstatus_tmp: temporal wstatus
  *Return: none
  */
-void hand_status(int *wstatus, char **argv, char *name,
-		 char *buffer, int wstatus_tmp)
+void hand_status(int *wstatus, char **argv, char *name, char *buffer, int wstatus_tmp)
 {
 	if (WIFEXITED(*wstatus) == 1)
 	{
