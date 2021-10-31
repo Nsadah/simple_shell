@@ -1,24 +1,28 @@
-#ifndef _SIMPLE_SHELL_
-#define _SIMPLE_SHELL_
+#define TRUE 1
+#define FALSE !TRUE
 
-/*Standard Libraries*/
-#include <stdio.h>
-#include <unistd.h>
-#include <stdlib.h>
-#include <string.h>
-#include <sys/types.h>
-#include <sys/wait.h>
-#include <sys/stat.h>
-#include <signal.h>
-#include <fcntl.h>
+// Shell pid, pgid, terminal modes
+static pid_t GBSH_PID;
+static pid_t GBSH_PGID;
+static int GBSH_IS_INTERACTIVE;
+static struct termios GBSH_TMODES;
 
-/*Prototypes*/
-void start_shell(char *name);
-void hand_status(int *wstatus, char **argv, char *name, char *buffer, int wstatus_tmp);
-void print_prompt(int lenPrompt;
-void check_interactive(int *lenPrompt);
-void check_exit(char **argv);
-#endif
-#ifndef BSIZE
-#define BSIZE 10000
-#endif
+static char* currentDirectory;
+extern char** environ;
+
+struct sigaction act_child;
+struct sigaction act_int;
+
+int no_reprint_prmpt;
+
+pid_t pid;
+
+
+/* SIGNAL HANDLERS */
+/* signal handler for SIGCHLD */
+void signalHandler_child(int p);
+/* signal handler for SIGINT */
+void signalHandler_int(int p);
+
+
+int changeDirectory(char * args[]);
